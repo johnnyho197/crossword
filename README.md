@@ -1,4 +1,4 @@
-# crossword
+# Crossword
 
 Please follow these instructions and user guides to install/test this app.
 
