@@ -13,4 +13,4 @@ After you have selected the difficulty level, the game screen will appear. The g
 
 ![EasyLevel](https://github.com/johnnyho197/crossword/assets/89495195/5a95624d-345f-4ac7-846d-d1f2fa67d354)
 
-You can replay as many time as you want or choose exit to exit the game. Your score would still be stored in the local device so next time you play you can try to beat your old highscore.
+You can replay as many times as you want or choose exit to exit the game. Your high scores would still be stored in the local device so next time you play you can try to beat your old highscores.
