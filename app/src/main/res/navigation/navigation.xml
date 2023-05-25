@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainIntro">
+    <fragment
+        android:id="@+id/mainIntro"
+        android:name="edu.sjsu.android.crossword.MainIntro"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_mainIntro_to_levelSelection"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/levelSelection" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelSelection"
+        android:name="edu.sjsu.android.crossword.LevelSelection"
+        android:label="fragment_level_selection"
+        tools:layout="@layout/fragment_level_selection" >
+        <action
+            android:id="@+id/action_levelSelection_to_mediumLevelScreen"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/mediumLevelScreen" />
+        <action
+            android:id="@+id/action_levelSelection_to_easyLevelScreen"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/easyLevelScreen" />
+        <action
+            android:id="@+id/action_levelSelection_to_hardLevelScreen"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/hardLevelScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediumLevelScreen"
+        android:name="edu.sjsu.android.crossword.MediumLevelScreen"
+        android:label="fragment_medium_level"
+        tools:layout="@layout/fragment_medium_level_screen" >
+        <action
+            android:id="@+id/action_mediumLevelScreen_to_levelSelection"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/levelSelection" />
+        <action
+            android:id="@+id/action_mediumLevelScreen_self"
+            app:destination="@id/mediumLevelScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/easyLevelScreen"
+        android:name="edu.sjsu.android.crossword.EasyLevelScreen"
+        android:label="fragment_easy_level_screen"
+        tools:layout="@layout/fragment_easy_level_screen" >
+        <action
+            android:id="@+id/action_easyLevelScreen_to_levelSelection"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/levelSelection" />
+        <action
+            android:id="@+id/action_easyLevelScreen_self"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/easyLevelScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/hardLevelScreen"
+        android:name="edu.sjsu.android.crossword.HardLevelScreen"
+        android:label="fragment_hard_level_screen"
+        tools:layout="@layout/fragment_hard_level_screen" >
+        <action
+            android:id="@+id/action_hardLevelScreen_to_levelSelection"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:destination="@id/levelSelection" />
+        <action
+            android:id="@+id/action_hardLevelScreen_self"
+            app:destination="@id/hardLevelScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="edu.sjsu.android.crossword.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" />
+</navigation>
